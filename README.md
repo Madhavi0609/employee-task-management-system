@@ -4,9 +4,9 @@ A small command-line Python application for managing employees and their tasks.
 
 ## Technology
 
-- Python 3
-- SQLite
-- Python built-in `sqlite3` module
+* Python 3
+* SQLite
+* Python built-in `sqlite3` module
 
 No external package is required.
 
@@ -14,36 +14,36 @@ No external package is required.
 
 The application supports:
 
-- Add an employee
-- Add a task
-- Assign a task to an employee
-- Set task priority as Low, Medium, or High
-- Set task status as Pending, In Progress, or Completed
-- Employee dashboard
-- Admin dashboard
-- Search employee by ID or name
-- Filter tasks by status and priority
-- View all employees
-- View all tasks
-- Update task status
+* Add an employee
+* Add a task
+* Assign a task to an employee
+* Set task priority as Low, Medium, or High
+* Set task status as Pending, In Progress, or Completed
+* Employee dashboard
+* Admin dashboard
+* Search employee by ID or name
+* Filter tasks by status and priority
+* View all employees
+* View all tasks
+* Update task status
 
 ## Database
 
 The program automatically creates:
 
-`task_manager.db`
+`task\_manager.db`
 
 The database contains two tables:
 
-- `employees`
-- `tasks`
+* `employees`
+* `tasks`
 
 You do not need to create the database manually.
 
 ## Project Files
 
 ```text
-employee_task_manager/
+employee\_task\_manager/
     app.py
     README.md
     .gitignore
@@ -145,6 +145,7 @@ For submission, useful screenshots are:
 
 ## Notes
 
-The database is stored locally in `task_manager.db`.
+The database is stored locally in `task\_manager.db`.
 
-If you want to start again with an empty database, close the program and delete `task_manager.db`. The application will create a fresh database on the next run.
+If you want to start again with an empty database, close the program and delete `task\_manager.db`. The application will create a fresh database on the next run.
+
