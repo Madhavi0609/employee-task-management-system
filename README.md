@@ -27,18 +27,40 @@ The application supports:
 * View all tasks
 * Update task status
 
-## Database
 
-The program automatically creates:
+### Database Schema
 
-`task\_manager.db`
+The application uses two SQLite tables.
 
-The database contains two tables:
+#### employees table
 
-* `employees`
-* `tasks`
+| Column | Description |
+|---|---|
+| employee_id | Primary Key - unique employee ID |
+| name | Employee name |
+| email | Employee email |
+| department | Employee department |
 
-You do not need to create the database manually.
+#### tasks table
+
+| Column | Description |
+|---|---|
+| task_id | Primary Key - unique task ID |
+| title | Task title |
+| description | Task description |
+| employee_id | Foreign Key linked to employees.employee_id |
+| priority | Task priority: Low, Medium, or High |
+| status | Task status: Pending, In Progress, or Completed |
+
+
+#### Relationship
+
+The `employee_id` in the `tasks` table is a Foreign Key linked to `employee_id` in the `employees` table.
+
+One employee can have multiple tasks.
+
+
+
 
 ## Project Files
 
